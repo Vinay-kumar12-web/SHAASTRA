@@ -417,10 +417,10 @@ function smartRespond(message) {
   const lower = message.toLowerCase().trim();
 
   // ── Fun / casual / Telugu responses ─────────────────────────────────────
-  if (matchesAny(lower, ["thinnava", "thinnanu", "tinava", "tinnava", "tinnanu"])) {
+  if (matchesAny(lower, ["who is your owner?", "who is vinay's wife?", "tinava", "tinnava", "tinnanu"])) {
     const replies = [
-      "Haan bro! Nenu tinnanu 🍛 Rice + curry — developer fuel! Nuvvu tinnava? Don't skip meals while coding! 😄",
-      "Ayyo, nenu tinnanu! 🍽️ Chaala baagundi today's food. Nuvvu kuda tino bro — brain needs energy to code! 💪",
+      "Haan bro! Vinay is my owner. He developed me ! 😄",
+      "Aditi Maithani is vinay's wife 💪",
       "Ha ha ha, nenu tinnanu ra! 😂 Poha and chai — developer breakfast! Study cheyyadaniki energy undali ga? 🔥",
     ];
     return { type: "general", content: replies[Math.floor(Math.random() * replies.length)] };
