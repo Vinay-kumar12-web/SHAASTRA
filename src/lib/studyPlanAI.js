@@ -417,11 +417,10 @@ function smartRespond(message) {
   const lower = message.toLowerCase().trim();
 
   // ── Fun / casual / Telugu responses ─────────────────────────────────────
-  if (matchesAny(lower, ["who is your owner?", "who is vinay's wife?", "tinava", "tinnava", "tinnanu"])) {
+  if (matchesAny(lower, [ "who is vinay's wife?","who is your owner?"])) {
     const replies = [
       "Haan bro! Vinay is my owner. He developed me ! 😄",
       "Aditi Maithani is vinay's wife 💪",
-      "Ha ha ha, nenu tinnanu ra! 😂 Poha and chai — developer breakfast! Study cheyyadaniki energy undali ga? 🔥",
     ];
     return { type: "general", content: replies[Math.floor(Math.random() * replies.length)] };
   }
