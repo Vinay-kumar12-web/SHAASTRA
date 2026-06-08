@@ -417,10 +417,9 @@ function smartRespond(message) {
   const lower = message.toLowerCase().trim();
 
   // ── Fun / casual / Telugu responses ─────────────────────────────────────
-  if (matchesAny(lower, [ "who is vinay's wife?","who is your owner?"])) {
+  if (matchesAny(lower, [ "who is your owner?"])) {
     const replies = [
       "Haan bro! Vinay is my owner. He developed me ! 😄",
-      "Aditi Maithani is vinay's wife 💪",
     ];
     return { type: "general", content: replies[Math.floor(Math.random() * replies.length)] };
   }
