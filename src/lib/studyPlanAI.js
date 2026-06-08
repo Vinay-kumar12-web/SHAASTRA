@@ -536,6 +536,10 @@ Ready to learn something today? Just tell me a topic and I'll build you a **day-
   if (matchesAny(lower, ["hello", "hi", "hey", "good morning", "good evening", "howdy", "what's up", "sup"])) {
     return { type: "general", content: greeting() };
   }
+  // vinay wife
+  if (matchesAny(lower, ["who is vinay's wife?"])) {
+    return { type: "general", content: "aditi maithani " };
+  }
 
   // ── Thank you ────────────────────────────────────────────────────────────
   if (matchesAny(lower, ["thank", "thanks", "appreciate", "great", "amazing", "awesome", "helpful", "perfect", "love it"])) {
